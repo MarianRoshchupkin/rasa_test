@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasa Test</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__info">
+      <div class="header__info__bank">
+        <a class="header__info__bank__link" href="#">Частным клиентам</a>
+        <a class="header__info__bank__link" href="#">Для бизнеса</a>
+        <div class="header__info__bank__divider"></div>
+        <a class="header__info__bank__link" href="#">О банке</a>
+        <a class="header__info__bank__link" href="#">Офисы</a>
+      </div>
+      <div class="header__info__utilities">
+        <a class="header__info__utilities__phone" href="tel:88007755606">8 (800) 775-56-06</a>
+        <div class="header__info__utilities__location">
+          <span class="header__info__utilities__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.2084 9.16658C15.2084 12.4999 10.0001 16.0416 10.0001 16.0416C10.0001 16.0416 4.79175 12.4999 4.79175 9.16658C4.79175 6.24992 7.23866 3.95825 10.0001 3.95825C12.7615 3.95825 15.2084 6.24992 15.2084 9.16658Z" stroke="#0D0D0D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 11.0417C11.0355 11.0417 11.875 10.2023 11.875 9.16675C11.875 8.13121 11.0355 7.29175 10 7.29175C8.96447 7.29175 8.125 8.13121 8.125 9.16675C8.125 10.2023 8.96447 11.0417 10 11.0417Z" stroke="#0D0D0D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="header__info__utilities__text">Хабаровск</span>
+        </div>
+        <span class="header__info__utilities__language">English</span>
+      </div>
+    </div>
+    <div class="header__divider"></div>
+    <div class="header__menu">
+      <a class="header__menu__logo" href="/">
+        <img class="header__menu__logo__image" src="assets/images/logo.png" alt="логотип" />
+      </a>
+      <ul class="header__menu__navigation">
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Кредиты</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Вклады</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Обмен валют</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Карты</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Ипотека</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Переводы</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Страхование</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Страхование</a>
+        </li>
+        <li class="header__menu__navigation__item">
+          <a class="header__menu__navigation__link" href="#">Сервисы</a>
+        </li>
+      </ul>
+      <div class="header__menu__actions">
+        <div class="header__menu__actions__wrapper">
+          <span class="header__menu__actions__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.89286 4.75H6.06818C5.34017 4.75 4.75 5.34017 4.75 6.06818C4.75 13.3483 10.6517 19.25 17.9318 19.25C18.6598 19.25 19.25 18.6598 19.25 17.9318V15.1071L16.1429 13.0357L14.5317 14.6468C14.2519 14.9267 13.8337 15.0137 13.4821 14.8321C12.8858 14.524 11.9181 13.9452 10.9643 13.0357C9.98768 12.1045 9.41548 11.1011 9.12829 10.494C8.96734 10.1537 9.06052 9.76091 9.32669 9.49474L10.9643 7.85714L8.89286 4.75Z" stroke="#25B456" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="header__menu__actions__text header__menu__actions__text--red">Заказать звонок</span>
+        </div>
+        <div class="header__menu__actions__wrapper">
+          <span class="header__menu__actions__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.75 8.75L13.25 12L9.75 15.25" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H9.75" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 12H4.75" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="header__menu__actions__text header__menu__actions__text--green">Интернет-банк</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__banner">
+      <div class="main__banner__container">
+        <div class="main__banner__info">
+          <div class="main__banner__info__bread-crumbs">
+            <span class="main__banner__info__text">Главная</span>
+            <span class="main__banner__info__arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g opacity="0.5">
+                  <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="#131313"/>
+                </g>
+              </svg>
+            </span>
+            <span class="main__banner__info__text">Кредит</span>
+            <span class="main__banner__info__arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g opacity="0.5">
+                  <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="#131313"/>
+                </g>
+              </svg>
+            </span>
+            <span class="main__banner__info__text">Автокредит</span>
+          </div>
+          <h2 class="main__banner__info__title">Автокредит от 7,5% годовых</h2>
+          <p class="main__banner__info__desc">на покупку авто у дилера или у частного лица</p>
+          <a class="main__banner__info__button" href="#">Оформить</a>
+        </div>
+        <div class="main__banner__decoration">
+          <img class="main__banner__decoration__image" src="assets/images/audi_banner.png" alt="aуди на баннере" />
+        </div>
+      </div>
+    </div>
+    <div class="main__content">
+      <div class="main__content__header">
+        <h3 class="main__content__header__title">Выберите себе авто</h3>
+        <div class="main__content__header__dropdown">
+          <span class="main__content__header__text">Свернуть список машин</span>
+          <span class="main__content__header__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.25 14.25L12 10.75L8.75 14.25" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+          </span>
+        </div>
+      </div>
+      <div class="main__content__filter">
+        <div class="main__content__filter__wrapper main__content__filter__wrapper--mark">
+          <span class="main__content__filter__title">Марка</span>
+          <div class="main__content__filter__dropdown">
+            <span class="main__content__filter__text">Выбрать</span>
+            <span class="main__content__filter__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.25 10.75L12 14.25L8.75 10.75" stroke="#797A80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="main__content__filter__wrapper main__content__filter__wrapper--year">
+          <span class="main__content__filter__title">Год</span>
+          <div class="main__content__filter__dropdown">
+            <span class="main__content__filter__text">Выбрать</span>
+            <span class="main__content__filter__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.25 10.75L12 14.25L8.75 10.75" stroke="#797A80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="main__content__filter__wrapper main__content__filter__wrapper--price">
+          <span class="main__content__filter__title">Цена</span>
+          <div class="main__content__filter__from-to">
+            <input class="main__content__filter__input" type="text" placeholder="От" />
+            <div class="main__content__filter__divider"></div>
+            <input class="main__content__filter__input" type="text" placeholder="До" />
+          </div>
+        </div>
+      </div>
+      <div class="main__content__top-cars">
+        <div class="main__content__top-cars__wrapper">
+          <div class="main__content__top-cars__info">
+            <h5 class="main__content__top-cars__subtitle">Лучшее предложение</h4>
+            <h4 class="main__content__top-cars__title">Renault Arkana drive</h4>
+            <p class="main__content__top-cars__desc">
+              Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: 
+              от дизайна кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!
+            </p>
+            <span class="main__content__top-cars__price">от 1 316 000 ₽</span>
+            <a class="main__content__top-cars__link" href="#">
+              <span class="main__content__top-cars__text">Подробнее</span>
+              <span class="main__content__top-cars__icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.3125 5.0625L14.4375 9L10.3125 12.9375" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.25 9H3.5625" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+              </span>
+            </a>
+          </div>
+          <div class="main__content__top-cars__slider">
+            <img class="main__content__top-cars__image" src="assets/images/renault_slider.png" alt="Renault" />
+          </div>
+        </div>
+        <div class="main__content__top-cars__wrapper">
+          <div class="main__content__top-cars__info">
+            <h5 class="main__content__top-cars__subtitle">Лучшее предложение</h4>
+            <h4 class="main__content__top-cars__title">Volkswagen Tiguan PA</h4>
+            <p class="main__content__top-cars__desc">
+              Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: 
+              от дизайна кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!
+            </p>
+            <span class="main__content__top-cars__price">от 2 395 000 ₽</span>
+            <a class="main__content__top-cars__link" href="#">
+              <span class="main__content__top-cars__text">Подробнее</span>
+              <span class="main__content__top-cars__icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.3125 5.0625L14.4375 9L10.3125 12.9375" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.25 9H3.5625" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+              </span>
+            </a>
+          </div>
+          <div class="main__content__top-cars__slider">
+            <img class="main__content__top-cars__image" src="assets/images/volkswagen_slider.png" alt="Renault" />
+          </div>
+        </div>
+        <div class="main__content__top-cars__wrapper">
+          <div class="main__content__top-cars__info">
+            <h5 class="main__content__top-cars__subtitle">Лучшее предложение</h4>
+            <h4 class="main__content__top-cars__title">BMW X7</h4>
+            <p class="main__content__top-cars__desc">
+              Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: 
+              от дизайна кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!
+            </p>
+            <span class="main__content__top-cars__price">от 8 118 000 ₽</span>
+            <a class="main__content__top-cars__link" href="#">
+              <span class="main__content__top-cars__text">Подробнее</span>
+              <span class="main__content__top-cars__icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.3125 5.0625L14.4375 9L10.3125 12.9375" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.25 9H3.5625" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+              </span>
+            </a>
+          </div>
+          <div class="main__content__top-cars__slider">
+            <img class="main__content__top-cars__image" src="assets/images/bmw_slider.png" alt="Renault" />
+          </div>
+        </div>
+      </div>
+      <div class="main__content__all-cars">
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/kia_sportage_luxe+2.png');"></div>
+          <h3 class="main__content__all-cars__title">KIA Sportage. LUXE+ 2Л</h3>
+          <span class="main__content__all-cars__text">г.Якутск</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">2 211 700 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/skoda_karoq.png');"></div>
+          <h3 class="main__content__all-cars__title">Skoda Karoq</h3>
+          <span class="main__content__all-cars__text">г.Казань</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">1 790 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/cirtroen_c4.png');"></div>
+          <h3 class="main__content__all-cars__title">Citroen c4</h3>
+          <span class="main__content__all-cars__text">г.Уфа</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">1 523 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/mercedes-benz_gls400D4m_luxury.png');"></div>
+          <h3 class="main__content__all-cars__title">Mercedes-Benz Gls 400 D 4m Luxury</h3>
+          <span class="main__content__all-cars__text">г.Казань</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">2 211 700 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/mercedes-benz_gle350D4matic_coupe.png');"></div>
+          <h3 class="main__content__all-cars__title">Mercedes-benz Gle 350 D 4matic купе</h3>
+          <span class="main__content__all-cars__text">г.Казань</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">2 211 700 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/mercedes-benz_gle300D4matic_sport.png');"></div>
+          <h3 class="main__content__all-cars__title">Mercedes-benz Gle 300 D 4matic Sport</h3>
+          <span class="main__content__all-cars__text">г.Казань</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">2 211 700 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/kia_sportage_luxe+2\,4.png');"></div>
+          <h3 class="main__content__all-cars__title">Kia Sportage. Luxe+ 2.4л</h3>
+          <span class="main__content__all-cars__text">r.Якутск</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">2 336 700 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/kia_k5_prestige.png');"></div>
+          <h3 class="main__content__all-cars__title">Kia K5. Prestige. 2.5л</h3>
+          <span class="main__content__all-cars__text">г.Якутск</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">2 242 400 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/honda_freed.png');"></div>
+          <h3 class="main__content__all-cars__title">Honda Freed</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии.</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 650 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/nissan_caravan.png');"></div>
+          <h3 class="main__content__all-cars__title">Nissan Caravan (nv350)</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 1 250 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/toyota_land_cruizer_prado.png');"></div>
+          <h3 class="main__content__all-cars__title">Toyota Land Cruizer Prado</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 2 500 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/toyota_vitz_white.png');"></div>
+          <h3 class="main__content__all-cars__title">Toyota Vitz</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 480 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/toyota_vitz_gray.png');"></div>
+          <h3 class="main__content__all-cars__title">Toyota Vitz</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 520 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/mazda.png');"></div>
+          <h3 class="main__content__all-cars__title">KIA Sportage. LUXE+ 2Л</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 750 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/nissan.png');"></div>
+          <h3 class="main__content__all-cars__title">KIA Sportage. LUXE+ 2Л</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 800 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/toyota_gray.png');"></div>
+          <h3 class="main__content__all-cars__title">Toyota Vitz</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 1 050 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/honda_white.png');"></div>
+          <h3 class="main__content__all-cars__title">KIA Sportage. LUXE+ 2Л</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 600 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/suzuki.png');"></div>
+          <h3 class="main__content__all-cars__title">KIA Sportage. LUXE+ 2Л</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 850 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="main__content__all-cars__wrapper">
+          <div class="main__content__all-cars__image" style="background-image: url('assets/images/honda_gray.png');"></div>
+          <h3 class="main__content__all-cars__title">KIA Sportage. LUXE+ 2Л</h3>
+          <span class="main__content__all-cars__text">С аукциона Японии</span>
+          <div class="main__content__all-cars__info">
+            <span class="main__content__all-cars__price">от 440 000 ₽</span>
+            <a class="main__content__all-cars__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="main__content__application">
+        <span class="main__content__application__text">Не нашли автомобиль у нас, но нужен автокредит?&nbsp;</span>
+        <a class="main__content__application__link" href="#">Перейдите к форме заявки</a>
+      </div>
+      <div class="main__content__conditions">
+        <h3 class="main__content__conditions__header">Общие условия</h3>
+        <div class="main__content__conditions__info">
+          <h5 class="main__content__conditions__title">Срок</h5>
+          <span class="main__content__conditions__desc">от 6 месяцев до 6 лет.</span>
+        </div>
+        <div class="main__content__conditions__divider"></div>
+        <div class="main__content__conditions__info">
+          <h5 class="main__content__conditions__title">Сумма</h5>
+          <span class="main__content__conditions__desc">от 200 000 до 5 000 000 руб.</span>
+        </div>
+        <div class="main__content__conditions__divider"></div>
+        <div class="main__content__conditions__info">
+          <h5 class="main__content__conditions__title">Годовая процентная ставка</h5>
+          <span class="main__content__conditions__desc">от 7,5%*.</span>
+        </div>
+        <div class="main__content__conditions__divider"></div>
+        <div class="main__content__conditions__info">
+          <h5 class="main__content__conditions__title">Возможность приобретения авто у частного лица</h5>
+          <span class="main__content__conditions__desc"></span>
+        </div>
+        <div class="main__content__conditions__divider"></div>
+        <a class="main__content__conditions__link" href="#">
+          <span class="main__content__conditions__text">Смотреть полные условия кредита</span>
+          <span class="main__content__conditions__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.75 8.75L14.25 12L10.75 15.25" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+          </span>
+        </a>
+      </div>
+      <div class="main__content__faq">
+        <div class="main__content__faq__header">
+          <span class="main__content__faq__question">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.7821 38.7134C11.5744 37.4918 7.5082 33.4256 6.28664 28.2179C5.40445 24.457 5.40445 20.543 6.28664 16.7821C7.5082 11.5744 11.5744 7.5082 16.7821 6.28664C20.543 5.40445 24.457 5.40445 28.2179 6.28664C33.4256 7.50819 37.4918 11.5744 38.7134 16.7821C39.5955 20.543 39.5955 24.457 38.7134 28.2179C37.4918 33.4256 33.4256 37.4918 28.2179 38.7134C24.457 39.5955 20.543 39.5955 16.7821 38.7134Z" stroke="#C4C6CC" stroke-width="2.8125"/>
+              <circle cx="22.5" cy="29.0625" r="1.875" fill="#760135"/>
+              <path d="M18.75 18.75V17.8125C18.75 15.7414 20.4289 14.0625 22.5 14.0625V14.0625V14.0625C24.5711 14.0625 26.25 15.7414 26.25 17.8125V18.04C26.25 19.0949 25.8309 20.1066 25.085 20.8525L22.5 23.4375" stroke="#760135" stroke-width="2.8125" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+          </span>
+          <h3 class="main__content__faq__title">Часто задаваемые вопросы</h3>
+        </div>
+        <div class="main__content__faq__accordion">
+          <span class="main__content__faq__text">Как подать заявку на автокредит?</span>
+          <span class="main__content__faq__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.25 10.75L12 14.25L8.75 10.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__info">
+        <div class="footer__info__navigation">
+          <div class="footer__info__navigation__wrapper">
+            <h5 class="footer__info__navigation__title">Частным лицам</h5>
+            <ul class="footer__info__navigation__list">
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Банковские карты</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Кредиты</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Вклады</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Ипотека</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Страхование</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Сейфовые ячейки</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Открытие счетов</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Обмен валюты</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Переводы</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Маркетплейс</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info__navigation__wrapper">
+            <h5 class="footer__info__navigation__title">Бизнесу</h5>
+            <ul class="footer__info__navigation__list">
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Экспресс-МСБ</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Расчетно-кассовое обслуживание</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Онлайн резервирование счета</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Внешнеэкономическая деятельность</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Зарплатный проект</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Овердрафт</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Кредит</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Лизинг</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Депозиты</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Банковские гарантии</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Факторинг</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info__navigation__wrapper">
+            <h5 class="footer__info__navigation__title">О банке</h5>
+            <ul class="footer__info__navigation__list">
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Новости</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Офисы</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Инвестиционные услуги</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">О банке</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Реквизиты</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Тарифы</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Монеты</a>
+              </li>
+              <li class="footer__info__navigation__item">
+                <a class="footer__info__navigation__link" href="#">Непрофильные активы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info__contacts">
+          <div class="footer__info__contacts__wrapper">
+            <a class="footer__info__contacts__phone">8 800 775-56-06</a>
+            <span class="footer__info__contacts__text">Для звонков по России (бесплатно)</span>
+          </div>
+          <div class="footer__info__contacts__wrapper">
+            <a class="footer__info__contacts__phone">+7 495 232-37-23</a>
+            <span class="footer__info__contacts__text">Для блокировки карт (круглосуточно)</span>
+          </div>
+          <div class="footer__info__contacts__medias">
+            <div class="footer__info__contacts__media">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.55686 14.6999L10.5802 16.174L12.1486 21.1324C12.2168 21.4675 12.626 21.5345 12.8987 21.3335L15.149 19.5243C15.3536 19.3233 15.6946 19.3233 15.9674 19.5243L19.9907 22.4056C20.2634 22.6066 20.6726 22.4726 20.7408 22.1375L23.7412 8.0663C23.8094 7.73127 23.4685 7.39624 23.1275 7.53026L6.55686 13.8288C6.14771 13.9628 6.14771 14.5659 6.55686 14.6999ZM11.944 15.4369L19.8543 10.6795C19.9907 10.6125 20.1271 10.8135 19.9907 10.8805L13.5124 16.8441C13.3079 17.0451 13.1033 17.3131 13.1033 17.6481L12.8987 19.2563C12.8987 19.4573 12.5578 19.5243 12.4896 19.2563L11.6713 16.308C11.4667 15.973 11.6031 15.571 11.944 15.4369Z" fill="#7E7F85"/>
+              </svg>
+            </div>
+            <div class="footer__info__contacts__media">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7815 21.25C9.80247 21.25 6.3921 16.5578 6.25 8.75H9.245C9.34338 14.4807 11.5514 16.9082 13.3003 17.4087V8.75H16.1204V13.6924C17.8474 13.4797 19.6619 11.2275 20.274 8.75H23.0942C22.8635 10.0349 22.4037 11.2515 21.7435 12.3237C21.0834 13.3958 20.2371 14.3006 19.2575 14.9812C20.3509 15.6032 21.3167 16.4835 22.0911 17.5641C22.8655 18.6446 23.4309 19.9009 23.75 21.25H20.6457C20.3592 20.0782 19.777 19.0293 18.972 18.2347C18.167 17.44 17.175 16.9351 16.1204 16.783V21.25H15.7815Z" fill="#7E7F85"/>
+              </svg>
+            </div>
+            <div class="footer__info__contacts__media">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.8924 19.5984C12.1482 19.4164 10.5754 18.9869 9.22894 17.9337C9.06187 17.8027 8.88937 17.6764 8.73691 17.5301C8.14755 16.9641 8.08817 16.3158 8.55451 15.6477C8.95347 15.076 9.62318 14.9231 10.3193 15.2514C10.4541 15.315 10.5825 15.3944 10.7055 15.4797C13.2149 17.2039 16.6623 17.2515 19.1811 15.5572C19.4307 15.3659 19.6974 15.2099 20.0066 15.1302C20.6077 14.9759 21.1683 15.1967 21.4909 15.7227C21.8595 16.3233 21.8548 16.9096 21.4007 17.376C20.7041 18.0909 19.8664 18.6082 18.9356 18.9692C18.0554 19.3104 17.0914 19.4822 16.1372 19.5963C16.2812 19.753 16.3491 19.83 16.4391 19.9205C17.7347 21.2222 19.0359 22.5185 20.3273 23.8243C20.7673 24.2692 20.8592 24.8208 20.6169 25.3383C20.352 25.9039 19.7592 26.2759 19.1778 26.2361C18.8095 26.2107 18.5222 26.0273 18.267 25.7702C17.2893 24.7864 16.2932 23.8207 15.3353 22.8183C15.0565 22.5268 14.9225 22.5819 14.6764 22.835C13.6928 23.8476 12.6932 24.8446 11.6877 25.836C11.2362 26.2811 10.6989 26.3612 10.1753 26.107C9.61871 25.8372 9.26453 25.269 9.29186 24.698C9.31071 24.3118 9.50065 24.0168 9.76575 23.7521C11.0479 22.4719 12.3265 21.1883 13.6056 19.9059C13.6902 19.8206 13.7692 19.7301 13.8924 19.5984Z" fill="#7E7F85"/>
+                <path d="M14.955 15.1387C11.8432 15.1281 9.29162 12.5485 9.30977 9.43176C9.32768 6.28066 11.8809 3.7413 15.0233 3.75002C18.172 3.75851 20.6994 6.33439 20.6836 9.51825C20.6676 12.6286 18.0983 15.1496 14.955 15.1387ZM17.783 9.4393C17.7776 7.89179 16.5451 6.65982 15.0007 6.65841C13.4433 6.65676 12.1998 7.91112 12.2118 9.47277C12.2233 11.0144 13.4664 12.2376 15.0151 12.232C16.559 12.2266 17.7882 10.9866 17.783 9.4393Z" fill="#7E7F85"/>
+              </svg>
+            </div>
+            <div class="footer__info__contacts__media">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25 8.17493C24.263 8.50023 23.4723 8.72107 22.6428 8.81956C23.4902 8.31221 24.1407 7.50643 24.445 6.54844C23.6514 7.01997 22.7741 7.36019 21.8402 7.54523C21.0913 6.74839 20.0261 6.25 18.8445 6.25C16.5799 6.25 14.7419 8.08838 14.7419 10.3535C14.7419 10.6758 14.7777 10.9892 14.8493 11.2876C11.4389 11.1175 8.41638 9.48209 6.39341 6.99908C6.04132 7.60491 5.83843 8.30923 5.83843 9.06129C5.83843 10.4848 6.56348 11.7413 7.66448 12.4754C6.99314 12.4545 6.36058 12.2695 5.80561 11.9621C5.80561 11.98 5.80561 11.9949 5.80561 12.0129C5.80561 14.0005 7.2199 15.6598 9.09667 16.0358C8.75354 16.1283 8.38953 16.1791 8.01656 16.1791C7.75101 16.1791 7.49441 16.1522 7.24377 16.1045C7.76593 17.7339 9.28166 18.9217 11.0749 18.9545C9.66955 20.0558 7.90318 20.7124 5.97867 20.7124C5.64747 20.7124 5.32224 20.6915 5 20.6556C6.81411 21.8196 8.97136 22.5 11.2897 22.5C18.8356 22.5 22.9621 16.2477 22.9621 10.8251C22.9621 10.646 22.9591 10.4699 22.9502 10.2938C23.7528 9.71488 24.448 8.99265 24.997 8.16896L25 8.17493Z" fill="#7E7F85"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__links">
+        <a class="footer__links__link" href="#">FATCA</a>
+        <a class="footer__links__link" href="#">Страхование и другие услуги НФО</a>
+        <a class="footer__links__link" href="#">Общие условия предоставления банковских гарантий в АО «Солид Банк»</a>
+        <a class="footer__links__link" href="#">Памятки по финансовой безопасности</a>
+        <a class="footer__links__link" href="#">Обеспечение защиты прав потребителей финансовых услуг</a>
+        <a class="footer__links__link" href="#">Методика определения справедливой стоимости финансовых инструментов</a>
+        <a class="footer__links__link" href="#">Политика в отношении обработки персональных данных</a>
+        <a class="footer__links__link" href="#">Лица, ответственные за сведения на сайте</a>
+        <a class="footer__links__link" href="#">Аудиторская компания</a>
+        <a class="footer__links__link" href="#">Надзорные органы</a>
+        <a class="footer__links__link" href="#">Информация о процентных ставках по договорам банковского вклада с физическими лицами</a>
+        <a class="footer__links__link" href="#">Информация, связанная с совершением Банком действий, предусмотренных пунктом 5.6 статьи 7 ФЗ N 115</a>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__mark">
+        <span class="footer__mark__text">© 2004-2021, АО «Солид Банк» , официальный сайт, генеральная лицензия ЦБ РФ № 1329.</span>
+        <div class="footer__mark__development">
+          <span class="footer__mark__development__text">Разработка сайта - </span>
+          <a class="footer__mark__development__link" href="#">RASA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
