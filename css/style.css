@@ -118,6 +118,14 @@ input {
 .header__info__bank-tablet {
   display: none;
   align-items: center;
+  width: 100%;
+}
+
+.header__info__bank__divider-tablet {
+  display: none;
+  width: 1px;
+  height: 52px;
+  background-color: var(--light-color-3);
 }
 
 .header__info__bank__link {
@@ -459,6 +467,82 @@ input {
 
 .header__navigation-tablet {
   display: none;
+  padding: 15px 16px 16px 16px;
+}
+
+.header__navigation-tablet__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__navigation-tablet__link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+  color: var(--tertiary-color);
+}
+
+.header__navigation-tablet__dropdown {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50px;
+  z-index: var(--zindex-dropdown);
+}
+
+.header__navigation-tablet__menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  padding: 10px 16px;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: 1px solid var(--light-color-5);
+  width: 200px;
+  background-color: var(--background-color);
+}
+
+.header__navigation-tablet__menu--active {
+  display: flex;
+}
+
+.header__navigation-tablet__text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+  color: var(--tertiary-color);
+}
+
+.header__navigation-tablet__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__navigation-tablet__icon--active {
+  transform: rotate(180deg);
+}
+
+.header__navigation-tablet__selection {
+  padding: 10px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+  color: var(--tertiary-color);
+  text-align: start;
 }
 
 .main {
@@ -478,6 +562,7 @@ input {
   padding: 0 95px 0  60px;
   margin: 0 auto;
   max-width: 1440px;
+  overflow: hidden;
 }
 
 .main__banner__info__bread-crumbs {
@@ -1210,6 +1295,87 @@ input {
   display: none;
 }
 
+.footer__contacts-tablet {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 24px 0;
+}
+
+.footer__contacts-tablet__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer__contacts-tablet__wrapper-cards {
+  margin: 0 0 0 15px;
+}
+
+.footer__contacts-tablet__phone {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  color: var(--primary-color);
+}
+
+.footer__contacts-tablet__phone:hover {
+  color: var(--dark-color-4);
+}
+
+.footer__contacts-tablet__phone:active {
+  color: var(--dark-color-4);
+}
+
+.footer__contacts-tablet__phone:focus {
+  color: var(--dark-color-4);
+}
+
+.footer__contacts-tablet__text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--dark-color-6);
+}
+
+.footer__contacts-tablet__medias {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__contacts-tablet__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 9px;
+  background-color: var(--light-color-3);
+  cursor: pointer;
+}
+
+.footer__contacts-tablet__media:hover {
+  background-color: var(--light-color-1);
+}
+
+.footer__contacts-tablet__media:active {
+  background-color: var(--light-color-1);
+}
+
+.footer__contacts-tablet__media:focus {
+  background-color: var(--light-color-1);
+}
+
+.footer__divider-tablet {
+  display: block;
+  margin: 0 0 23px 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-color-6); 
+}
+
 .footer__divider-tablet {
   display: none;
 }
@@ -1439,13 +1605,10 @@ input {
 
   .header__info__bank-tablet {
     display: flex;
-    width: 100%;
   }
 
   .header__info__bank__divider-tablet {
-    width: 1px;
-    height: 52px;
-    background-color: var(--light-color-3);
+    display: block;
   }
 
   .header__info__utilities {
@@ -1466,89 +1629,12 @@ input {
 
   .header__navigation-tablet {
     display: flex;
-    padding: 15px 16px 16px 16px;;
-  }
-
-  .header__navigation-tablet__list {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .header__navigation-tablet__link {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.06px;
-    color: var(--tertiary-color);
-  }
-
-  .header__navigation-tablet__dropdown {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 50px;
-    z-index: var(--zindex-dropdown);
-  }
-  
-  .header__navigation-tablet__menu {
-    position: absolute;
-    top: 35px;
-    left: 0;
-    display: none;
-    flex-direction: column;
-    padding: 10px 16px;
-    margin: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    outline: 1px solid var(--light-color-5);
-    width: 200px;
-    background-color: var(--background-color);
-  }
-  
-  .header__navigation-tablet__menu--active {
-    display: flex;
-  }
-  
-  .header__navigation-tablet__text {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.06px;
-    color: var(--tertiary-color);
-  }
-  
-  .header__navigation-tablet__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header__navigation-tablet__icon--active {
-    transform: rotate(180deg);
-  }
-  
-  .header__navigation-tablet__selection {
-    padding: 10px 16px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.06px;
-    color: var(--tertiary-color);
-    text-align: start;
   }
 
   .main__banner__container {
     position: relative;
     padding: 0 0 0 17px;
     height: 330px;
-    overflow: hidden;
   }
 
   .main__banner__info {
@@ -1688,83 +1774,6 @@ input {
 
   .footer__contacts-tablet {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 0 24px 0;
-  }
-  
-  .footer__contacts-tablet__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
-
-  .footer__contacts-tablet__wrapper-cards {
-    margin: 0 0 0 15px;
-  }
-  
-  .footer__contacts-tablet__phone {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 31px;
-    color: var(--primary-color);
-  }
-  
-  .footer__contacts-tablet__phone:hover {
-    color: var(--dark-color-4);
-  }
-  
-  .footer__contacts-tablet__phone:active {
-    color: var(--dark-color-4);
-  }
-  
-  .footer__contacts-tablet__phone:focus {
-    color: var(--dark-color-4);
-  }
-  
-  .footer__contacts-tablet__text {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 17px;
-    color: var(--dark-color-6);
-  }
-  
-  .footer__contacts-tablet__medias {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .footer__contacts-tablet__media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    border-radius: 9px;
-    background-color: var(--light-color-3);
-    cursor: pointer;
-  }
-  
-  .footer__contacts-tablet__media:hover {
-    background-color: var(--light-color-1);
-  }
-  
-  .footer__contacts-tablet__media:active {
-    background-color: var(--light-color-1);
-  }
-  
-  .footer__contacts-tablet__media:focus {
-    background-color: var(--light-color-1);
-  }
-
-  .footer__divider-tablet {
-    display: block;
-    margin: 0 0 23px 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--light-color-6); 
   }
 
   .footer__info {
