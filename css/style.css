@@ -385,7 +385,7 @@ input {
   align-items: center;
 }
 
-.header__menu__navigation__icon--active {
+.header__menu__navigation__svg--active {
   transform: rotate(180deg);
 }
 
@@ -545,6 +545,128 @@ input {
   text-align: start;
 }
 
+.header__navigation-mobile {
+  display: none;
+  padding: 15px 16px 16px 16px;
+}
+
+.header__navigation-mobile__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__navigation-mobile__link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+  color: var(--tertiary-color);
+}
+
+.header__navigation-mobile__dropdown {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50px;
+  z-index: var(--zindex-dropdown);
+}
+
+.header__navigation-mobile__menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  padding: 10px 16px;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: 1px solid var(--light-color-5);
+  width: 200px;
+  background-color: var(--background-color);
+}
+
+.header__navigation-mobile__menu--active {
+  display: flex;
+}
+
+.header__navigation-mobile__text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+  color: var(--tertiary-color);
+}
+
+.header__navigation-mobile__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__navigation-mobile__icon--active {
+  transform: rotate(180deg);
+}
+
+.header__navigation-mobile__selection {
+  padding: 10px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+  color: var(--tertiary-color);
+  text-align: start;
+}
+
+.header__divider-mobile {
+  display: none;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-color-3);
+}
+
+.header__actions-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.header__actions-mobile__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.header__actions-mobile__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__actions-mobile__text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.header__actions-mobile__text--red {
+  color: var(--accent-color);
+}
+
+.header__actions-mobile__text--green {
+  color: var(--primary-color);
+}
+
 .main {
   width: 100%;
 }
@@ -603,7 +725,7 @@ input {
 }
 
 .main__banner__info__desc {
-  margin: 0 0 23px 0;
+  margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -618,6 +740,7 @@ input {
   width: 230px;
   height: 48px;
   padding: 8px 24px;
+  margin: 23px 0 0 0;
   border-radius: 8px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
@@ -694,6 +817,10 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main__content__header__svg--active {
+  transform: rotate(180deg);
 }
 
 .main__content__filter {
@@ -837,7 +964,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
 }
 
 .main__content__top-cars__wrapper {
@@ -946,7 +1073,12 @@ input {
 }
 
 .main__content__top-cars__slide {
+  display: none;
   width: 312px;
+}
+
+.main__content__top-cars__slide--active {
+  display: block;
 }
 
 .main__content__top-cars__image {
@@ -957,7 +1089,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .main__content__all-cars {
@@ -965,6 +1096,10 @@ input {
   flex-wrap: wrap;
   gap: 15px;
   margin: 0 0 24px 0;
+}
+
+.main__content__all-cars--active {
+  display: none;
 }
 
 .main__content__all-cars__wrapper {
@@ -979,7 +1114,7 @@ input {
 }
 
 .main__content__all-cars__image {
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   border-radius: 16px;
   width: 100%;
   height: 200px;
@@ -989,7 +1124,7 @@ input {
 }
 
 .main__content__all-cars__title {
-  margin: 0 0 16px 0;
+  margin: 0 0 18px 0;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -999,7 +1134,7 @@ input {
 
 .main__content__all-cars__text {
   display: flex;
-  margin: 0 0 8px 0;
+  margin: 0 0 7px 0;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -1081,7 +1216,6 @@ input {
   font-size: 15px;
   line-height: 20px;
   background-color: var(--background-color);
-  text-align: center;
 }
 
 .main__content__application__text {
@@ -1239,19 +1373,16 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 24px;
+  padding: 14px 40px 14px 24px;
   margin: 10px 0 0 0;
   border-radius: 16px;
-  width: 100%;
-  background-color: var(--background-color);
-}
-
-.main__content__faq__text {
+  width: 99%;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
   color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .main__content__faq__icon {
@@ -1260,8 +1391,7 @@ input {
   align-items: center;
 }
 
-.main__content__faq__icon--active,
-.main__content__faq__icon--active {
+.main__content__faq__svg--active {
   transform: rotate(180deg);
 }
 
@@ -1271,7 +1401,7 @@ input {
   padding: 16px;
   margin: 0;
   border-radius: 8px;
-  width: 100%;
+  width: 99%;
   background-color: var(--background-color);
 }
 
@@ -1545,6 +1675,68 @@ input {
   text-decoration: none;
 }
 
+.footer__info-tablet__faq {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.footer__info-tablet__faq__dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 17px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.footer__info-tablet__faq__text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+.footer__info-tablet__faq__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__info-tablet__faq__svg-private--active,
+.footer__info-tablet__faq__svg-business--active,
+.footer__info-tablet__faq__svg-bank--active,
+.footer__info-tablet__faq__svg-additional--active {
+  transform: rotate(180deg);
+}
+
+.footer__info-tablet__faq__menu {
+  display: none;
+}
+
+.footer__info-tablet__faq__menu-private--active,
+.footer__info-tablet__faq__menu-business--active,
+.footer__info-tablet__faq__menu-bank--active,
+.footer__info-tablet__faq__menu-additional--active {
+  display: flex;
+}
+
+.footer__info-tablet__faq__selection {
+  padding: 16px 0;
+}
+
+.footer__info-tablet__faq__divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-color-3);
+}
+
 .footer__divider {
   margin: 0 0 15px 0;
   width: 100%;
@@ -1766,6 +1958,11 @@ input {
 
   .main__content__faq__dropdown {
     padding: 14px 38px 14px 26px;
+    width: 100%;
+  }
+
+  .main__content__faq__menu {
+    width: 100%;
   }
 
   .footer__container {
@@ -1774,6 +1971,10 @@ input {
 
   .footer__contacts-tablet {
     display: flex;
+  }
+
+  .footer__divider-tablet {
+    display: block;
   }
 
   .footer__info {
@@ -1824,5 +2025,278 @@ input {
 
   .footer__mark__development {
     margin: 0 1px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    padding: 16px 16px 15px 16px;
+  }
+
+  .header__menu__actions__wrapper {
+    display: none;
+  }
+
+  .header__navigation-tablet {
+    display: none;
+  }
+
+  .header__navigation-mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header__navigation-mobile {
+    display: flex;
+    padding: 16px 0 15px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .header__navigation-mobile__list {
+    white-space: nowrap;
+  }
+
+  .header__divider-mobile {
+    display: block;
+  }
+
+  .header__actions-mobile {
+    display: flex;
+  }
+
+  .main__banner__container {
+    padding: 0 16px;
+    height: 444px;
+  }
+
+  .main__banner__info {
+    margin: 0;
+  }
+
+  .main__banner__info__bread-crumbs {
+    display: flex;
+    margin: 20px 0 28px 0;
+  }
+
+  .main__banner__info__text {
+    letter-spacing: 0;
+  }
+
+  .main__banner__info__title {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .main__banner__info__desc::first-letter {
+    text-transform: capitalize;
+  }
+
+  .main__banner__info__button {
+    display: none;
+  }
+
+  .main__banner__decoration {
+    bottom: 0;
+    left: -42px;
+    width: 358px;
+  }
+
+  .main__content {
+    padding: 38px 16px 100px 16px;
+  }
+
+  .main__content__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 0 16px 0;
+  }
+
+  .main__content__header__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .main__content__header__dropdown {
+    width: 100%;
+  }
+
+  .main__content__filter {
+    flex-wrap: wrap;
+    gap: 16px 0;
+  }
+
+  .main__content__filter__wrapper-mark {
+    max-width: 47.5%;
+  }
+
+  .main__content__filter__wrapper-year {
+    max-width: 47.5%;
+  }
+
+  .main__content__filter__wrapper-price {
+    max-width: 100%;
+  }
+
+  .main__content__filter__from-to {
+    gap: 3px;
+  }
+
+  .main__content__filter__input {
+    max-width: 100%;
+  }
+
+  .main__content__filter__divider {
+    max-width: 10px;
+  }
+
+  .main__content__top-cars {
+    margin: 0 0 13px 0;
+  }
+
+  .main__content__top-cars__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px 10px;
+  }
+
+  .main__content__top-cars__slider {
+    justify-content: space-between;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .main__content__top-cars__arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main__content__top-cars__slide {
+    width: 230px;
+  }
+
+  .main__content__top-cars__info {
+    order: 2;
+    padding: 0 14px;
+  }
+
+  .main__content__all-cars__wrapper {
+    flex: 1 1 100%;
+  }
+
+  .main__content__extension {
+    margin: 0 0 34px 0;
+  }
+
+  .main__content__application {
+    justify-content: stretch;
+    padding: 16px;
+    margin: 0 0 32px 0;
+  }
+
+  .main__content__application__container {
+    display: inline;
+  }
+
+  .main__content__application__text {
+    display: inline;
+  }
+
+  .main__content__application__link {
+    display: inline;
+  }
+
+  .main__content__conditions {
+    padding: 24px;
+    margin: 0 0 80px 0;
+  }
+
+  .main__content__conditions__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .main__content__conditions__info-period {
+    padding: 12px 0 19px 0;
+  }
+
+  .main__content__conditions__info-sum {
+    padding: 20px 0 19px 0;
+  }
+
+  .main__content__conditions__info-rate {
+    padding: 20px 0 19px 0;
+  }
+
+  .main__content__conditions__info-private {
+    padding: 20px 0 11px 0;
+  }
+
+  .main__content__conditions__link {
+    margin: 16px 0 0 -11px;
+  }
+
+  .main__content__faq {
+    gap: 12px;
+  }
+
+  .main__content__faq__dropdown {
+    padding: 16px;
+  }
+
+  .footer__container {
+    padding: 22px 20px 24px 16px;
+  }
+
+  .footer__contacts-tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin: 0 0 24px 4px;
+  }
+
+  .footer__contacts-tablet__wrapper-cards {
+    margin: 0;
+  }
+
+  .footer__divider-tablet {
+    margin: 0 0 8px 0;
+  }
+
+  .footer__info {
+    margin: 0 0 22px 0;
+  }
+
+  .footer__info__navigation {
+    display: none;
+  }
+
+  .footer__info__divider {
+    display: none;
+  }
+
+  .footer__info-tablet__faq {
+    display: flex;
+  }
+
+  .footer__links {
+    display: none;
+  }
+
+  .footer__divider {
+    display: none;
+  }
+
+  .footer__mark {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 }

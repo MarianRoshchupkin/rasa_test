@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script defer type="module" src="js/script.js"></script>
 </head>
-<body onload="handleScreenResizeOnload('.main__content__all-cars__wrapper', 'main__content__all-cars__wrapper--inactive')" onresize="handleScreenResize('.main__content__all-cars__wrapper', 'main__content__all-cars__wrapper--inactive');">
+<body onload="handleScreenResizeOnload('.main__content__all-cars__wrapper', 'main__content__all-cars__wrapper--inactive')" onresize="handleScreenResizeOnload('.main__content__all-cars__wrapper', 'main__content__all-cars__wrapper--inactive');">
   <header class="header">
     <div class="header__info">
       <div class="header__info__bank">
@@ -147,6 +147,69 @@
         </li>
       </ul>
     </div>
+    <div class="header__navigation-mobile">
+      <ul class="header__navigation-mobile__list">
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Кредиты</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Вклады</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Обмен валют</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Карты</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Ипотека</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Переводы</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <a class="header__navigation-mobile__link" href="#">Страхование</a>
+        </li>
+        <li class="header__navigation-mobile__item">
+          <button class="header__navigation-mobile__dropdown" onclick="handleDropdownClick('.header__navigation-tablet__menu', '.header__navigation-tablet__icon', 'header__navigation-tablet__menu--active', 'header__navigation-tablet__svg--active');">
+            <span class="header__navigation-mobile__text">Сервисы</span>
+            <span class="header__navigation-mobile__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1666 7.16675L7.99992 9.50008L5.83325 7.16675" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </span>
+            <div class="header__navigation-mobile__menu">
+              <div class="header__navigation-mobile__selection">Выбрать 1</div>
+              <div class="header__navigation-mobile__line"></div>
+              <div class="header__navigation-mobile__selection">Выбрать 2</div>
+              <div class="header__navigation-mobile__line"></div>
+              <div class="header__navigation-mobile__selection">Выбрать 3</div>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="header__divider-mobile"></div>
+    <div class="header__actions-mobile">
+      <div class="header__actions-mobile__wrapper">
+        <span class="header__actions-mobile__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.89286 4.75H6.06818C5.34017 4.75 4.75 5.34017 4.75 6.06818C4.75 13.3483 10.6517 19.25 17.9318 19.25C18.6598 19.25 19.25 18.6598 19.25 17.9318V15.1071L16.1429 13.0357L14.5317 14.6468C14.2519 14.9267 13.8337 15.0137 13.4821 14.8321C12.8858 14.524 11.9181 13.9452 10.9643 13.0357C9.98768 12.1045 9.41548 11.1011 9.12829 10.494C8.96734 10.1537 9.06052 9.76091 9.32669 9.49474L10.9643 7.85714L8.89286 4.75Z" stroke="#25B456" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="header__actions-mobile__text header__actions-mobile__text--red">8 800 775-56-06</span>
+      </div>
+      <div class="header__actions-mobile__wrapper">
+        <span class="header__actions-mobile__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 8.75L13.25 12L9.75 15.25" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H9.75" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 12H4.75" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="header__actions-mobile__text header__actions-mobile__text--green">Интернет-банк</span>
+      </div>
+    </div>
   </header>
   <main class="main">
     <div class="main__banner">
@@ -183,7 +246,7 @@
     <div class="main__content">
       <div class="main__content__header">
         <h3 class="main__content__header__title">Выберите себе авто</h3>
-        <button class="main__content__header__dropdown">
+        <button class="main__content__header__dropdown" onclick="handleShowCloseListClick('.main__content__all-cars', 'main__content__all-cars--active', '.main__content__header__text', '.main__content__header__icon', 'main__content__header__svg--active')">
           <span class="main__content__header__text">Свернуть список машин</span>
           <span class="main__content__header__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,21 +317,34 @@
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.3125 5.0625L14.4375 9L10.3125 12.9375" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M14.25 9H3.5625" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                    
+                </svg>
               </span>
             </a>
           </div>
-          <div class="main__content__top-cars__slider">
-            <div class="main__content__top-cars__slide">
+          <div class="main__content__top-cars__slider" data-type="Renault">
+            <button class="main__content__top-cars__arrow" onclick="handlePrevImageClick('Renault');">
+              <svg style="transform: rotate(180deg)" width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                  <path d="M17.6842 27.9922L23.8906 22.2291L17.6842 16.4659" stroke="black" stroke-width="2.65991" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </button>
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--Renault main__content__top-cars__slide--active">
               <img class="main__content__top-cars__image" src="assets/images/renault_slider.png" alt="Renault" />
             </div>
-            <div class="main__content__top-cars__arrow">
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--Renault">
+              <img class="main__content__top-cars__image" src="assets/images/volkswagen_slider.png" alt="Volkswagen" />
+            </div>
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--Renault">
+              <img class="main__content__top-cars__image" src="assets/images/bmw_slider.png" alt="BMW" />
+            </div>
+            <button class="main__content__top-cars__arrow" onclick="handleNextImageClick('Renault');">
               <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.2">
                   <path d="M17.6842 27.9922L23.8906 22.2291L17.6842 16.4659" stroke="black" stroke-width="2.65991" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
-              </svg>                
-            </div>
+              </svg>
+            </button>
           </div>
         </div>
         <div class="main__content__top-cars__wrapper">
@@ -286,21 +362,34 @@
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.3125 5.0625L14.4375 9L10.3125 12.9375" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M14.25 9H3.5625" stroke="#760135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                    
+                </svg>
               </span>
             </a>
           </div>
-          <div class="main__content__top-cars__slider">
-            <div class="main__content__top-cars__slide">
+          <div class="main__content__top-cars__slider" data-type="Volkswagen">
+            <button class="main__content__top-cars__arrow" onclick="handlePrevImageClick('Volkswagen');">
+              <svg style="transform: rotate(180deg)" width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                  <path d="M17.6842 27.9922L23.8906 22.2291L17.6842 16.4659" stroke="black" stroke-width="2.65991" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </button>
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--Volkswagen main__content__top-cars__slide--active">
               <img class="main__content__top-cars__image" src="assets/images/volkswagen_slider.png" alt="Volkswagen" />
             </div>
-            <div class="main__content__top-cars__arrow">
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--Volkswagen">
+              <img class="main__content__top-cars__image" src="assets/images/renault_slider.png" alt="Renault" />
+            </div>
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--Volkswagen">
+              <img class="main__content__top-cars__image" src="assets/images/bmw_slider.png" alt="BMW" />
+            </div>
+            <button class="main__content__top-cars__arrow" onclick="handleNextImageClick('Volkswagen');">
               <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.2">
                   <path d="M17.6842 27.9922L23.8906 22.2291L17.6842 16.4659" stroke="black" stroke-width="2.65991" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
-              </svg>                
-            </div>
+              </svg>
+            </button>
           </div>
         </div>
         <div class="main__content__top-cars__wrapper">
@@ -322,17 +411,30 @@
               </span>
             </a>
           </div>
-          <div class="main__content__top-cars__slider">
-            <div class="main__content__top-cars__slide">
+          <div class="main__content__top-cars__slider" data-type="BMW">
+            <button class="main__content__top-cars__arrow" onclick="handlePrevImageClick('BMW');">
+              <svg style="transform: rotate(180deg)" width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                  <path d="M17.6842 27.9922L23.8906 22.2291L17.6842 16.4659" stroke="black" stroke-width="2.65991" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </button>
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--BMW main__content__top-cars__slide--active">
               <img class="main__content__top-cars__image" src="assets/images/bmw_slider.png" alt="BMW" />
             </div>
-            <div class="main__content__top-cars__arrow">
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--BMW">
+              <img class="main__content__top-cars__image" src="assets/images/renault_slider.png" alt="Renault" />
+            </div>
+            <div class="main__content__top-cars__slide main__content__top-cars__slide--BMW">
+              <img class="main__content__top-cars__image" src="assets/images/volkswagen_slider.png" alt="Volkswagen" />
+            </div>
+            <button class="main__content__top-cars__arrow" onclick="handleNextImageClick('BMW');">
               <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.2">
                   <path d="M17.6842 27.9922L23.8906 22.2291L17.6842 16.4659" stroke="black" stroke-width="2.65991" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
               </svg>                
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -511,27 +613,29 @@
       </div>
       <button class="main__content__extension" onclick="handleShowMoreClick('.main__content', '.main__content__extension', '.main__content__all-cars', '.main__content__all-cars__wrapper', 'main__content__all-cars__wrapper--inactive');">Показать все машины</button>
       <div class="main__content__application">
-        <span class="main__content__application__text">Не нашли автомобиль у нас, но нужен автокредит?&nbsp;</span>
-        <a class="main__content__application__link" href="#">Перейдите к форме заявки</a>
+        <div class="main__content__application__container">
+          <span class="main__content__application__text">Не нашли автомобиль у нас, но нужен автокредит?</span>
+          <a class="main__content__application__link" href="#">Перейдите к форме заявки</a>
+        </div>
       </div>
       <div class="main__content__conditions">
         <h3 class="main__content__conditions__header">Общие условия</h3>
-        <div class="main__content__conditions__info">
+        <div class="main__content__conditions__info main__content__conditions__info-period">
           <h5 class="main__content__conditions__title">Срок</h5>
           <span class="main__content__conditions__desc">от 6 месяцев до 6 лет.</span>
         </div>
         <div class="main__content__conditions__divider"></div>
-        <div class="main__content__conditions__info">
+        <div class="main__content__conditions__info main__content__conditions__info-sum">
           <h5 class="main__content__conditions__title">Сумма</h5>
           <span class="main__content__conditions__desc">от 200 000 до 5 000 000 руб.</span>
         </div>
         <div class="main__content__conditions__divider"></div>
-        <div class="main__content__conditions__info">
+        <div class="main__content__conditions__info main__content__conditions__info-rate">
           <h5 class="main__content__conditions__title">Годовая процентная&nbsp;&nbsp;ставка:</h5>
           <span class="main__content__conditions__desc">от 7,5 % *.</span>
         </div>
         <div class="main__content__conditions__divider"></div>
-        <div class="main__content__conditions__info">
+        <div class="main__content__conditions__info main__content__conditions__info-private">
           <h5 class="main__content__conditions__title">Возможность приобретения авто у частного лица</h5>
           <span class="main__content__conditions__desc"></span>
         </div>
@@ -566,9 +670,7 @@
             </span>
           </button>
           <div class="main__content__faq__menu">
-            <div class="main__content__faq__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis totam in maxime velit ipsa accusantium soluta rem numquam cupiditate veniam! Ratione repellendus dolore officiis qui cum. Dolorum quis temporibus quisquam!
-            </div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis totam in maxime velit ipsa accusantium soluta rem numquam cupiditate veniam! Ratione repellendus dolore officiis qui cum. Dolorum quis temporibus quisquam!
           </div>
         </div>
       </div>
@@ -719,6 +821,64 @@
           </div>
         </div>
         <div class="footer__info__divider"></div>
+        <div class="footer__info-tablet__faq">
+          <button class="footer__info-tablet__faq__dropdown" onclick="handleDropdownClick('.footer__info-tablet__faq__menu-private', '.footer__info-tablet__faq__icon-private', 'footer__info-tablet__faq__menu-private--active', 'footer__info-tablet__faq__svg-private--active');">
+            <span class="footer__info-tablet__faq__text">Частным лицам</span>
+            <span class="footer__info-tablet__faq__icon footer__info-tablet__faq__icon-private">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1666 7.16675L7.99992 9.50008L5.83325 7.16675" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </span>
+          </button>
+          <div class="footer__info-tablet__faq__menu footer__info-tablet__faq__menu-private">
+            <div class="footer__info-tablet__faq__selection">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, dolorum enim officia aliquid maxime temporibus dolorem molestias? Beatae, ipsam? Qui et repellendus consectetur eligendi beatae nostrum iste autem. Amet, iusto?
+            </div>
+          </div>
+          <div class="footer__info-tablet__faq__divider"></div>
+          <button class="footer__info-tablet__faq__dropdown" onclick="handleDropdownClick('.footer__info-tablet__faq__menu-business', '.footer__info-tablet__faq__icon-business', 'footer__info-tablet__faq__menu-business--active', 'footer__info-tablet__faq__svg-business--active');">
+            <span class="footer__info-tablet__faq__text">Бизнесу</span>
+            <span class="footer__info-tablet__faq__icon footer__info-tablet__faq__icon-business">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1666 7.16675L7.99992 9.50008L5.83325 7.16675" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </span>
+          </button>
+          <div class="footer__info-tablet__faq__menu footer__info-tablet__faq__menu-business">
+            <div class="footer__info-tablet__faq__selection">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe tenetur cupiditate, nisi distinctio omnis. Voluptatibus commodi, voluptas eveniet doloremque ex, eaque pariatur animi deleniti fugiat corrupti, exercitationem quod magnam.
+            </div>
+          </div>
+          <div class="footer__info-tablet__faq__divider"></div>
+          <button class="footer__info-tablet__faq__dropdown" onclick="handleDropdownClick('.footer__info-tablet__faq__menu-bank', '.footer__info-tablet__faq__icon-bank', 'footer__info-tablet__faq__menu-bank--active', 'footer__info-tablet__faq__svg-bank--active');">
+            <span class="footer__info-tablet__faq__text">О банке</span>
+            <span class="footer__info-tablet__faq__icon footer__info-tablet__faq__icon-bank">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1666 7.16675L7.99992 9.50008L5.83325 7.16675" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </span>
+          </button>
+          <div class="footer__info-tablet__faq__menu footer__info-tablet__faq__menu-bank">
+            <div class="footer__info-tablet__faq__selection">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quia nulla reiciendis aliquam, eveniet, vitae harum eaque similique commodi repellendus facilis sequi. Voluptas eos expedita error, dolor repellat aperiam recusandae.
+            </div>
+          </div>
+          <div class="footer__info-tablet__faq__divider"></div>
+          <button class="footer__info-tablet__faq__dropdown" onclick="handleDropdownClick('.footer__info-tablet__faq__menu-additional', '.footer__info-tablet__faq__icon-additional', 'footer__info-tablet__faq__menu-additional--active', 'footer__info-tablet__faq__svg-additional--active');">
+            <span class="footer__info-tablet__faq__text">Дополнительные пункты</span>
+            <span class="footer__info-tablet__faq__icon footer__info-tablet__faq__icon-additional">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1666 7.16675L7.99992 9.50008L5.83325 7.16675" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </span>
+          </button>
+          <div class="footer__info-tablet__faq__menu footer__info-tablet__faq__menu-additional">
+            <div class="footer__info-tablet__faq__selection">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique exercitationem, architecto repellat repudiandae quisquam debitis soluta! Laboriosam eligendi architecto provident corrupti laudantium quae amet, fuga quod dolor, quaerat numquam adipisci?
+            </div>
+          </div>
+          <div class="footer__info-tablet__faq__divider"></div>
+        </div>
         <div class="footer__info__contacts">
           <div class="footer__info__contacts__wrapper">
             <a class="footer__info__contacts__phone" href="tel:88007755606">8 800 775-56-06</a>
@@ -772,7 +932,7 @@
         <span class="footer__mark__text">© 2004-2021, АО «Солид Банк» , официальный сайт, генеральная лицензия ЦБ РФ № 1329.</span>
         <div class="footer__mark__development">
           <span class="footer__mark__development__text">Разработка сайта - </span>
-          <a class="footer__mark__development__link" href="#">RASA</a>
+          <a class="footer__mark__development__link" href="https://rasa.pro/" target="_blank">RASA</a>
         </div>
       </div>
     </div>
