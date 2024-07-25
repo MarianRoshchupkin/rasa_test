@@ -819,10 +819,6 @@ input {
   align-items: center;
 }
 
-.main__content__header__svg--active {
-  transform: rotate(180deg);
-}
-
 .main__content__filter {
   display: flex;
   align-items: center;
@@ -1073,12 +1069,7 @@ input {
 }
 
 .main__content__top-cars__slide {
-  display: none;
   width: 312px;
-}
-
-.main__content__top-cars__slide--active {
-  display: block;
 }
 
 .main__content__top-cars__image {
@@ -1089,6 +1080,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .main__content__all-cars {
@@ -1096,10 +1088,6 @@ input {
   flex-wrap: wrap;
   gap: 15px;
   margin: 0 0 24px 0;
-}
-
-.main__content__all-cars--active {
-  display: none;
 }
 
 .main__content__all-cars__wrapper {
